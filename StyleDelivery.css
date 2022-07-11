@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* background iamage styling */
+header::before{
+    content: " ";
+    background: url(Homeimg.jpg) no-repeat center center/cover;
+    position:
+    absolute;
+    top: 0;
+    left: 0;
+    height: 51vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+/* Navigation bar Styleing */
+#logo {
+    margin: 0px 29px;
+    padding: 5px 29px;
+}
+
+#logo img {
+    height: 54px;
+    width: 108px;
+}
+
+nav {
+    width: 100vw;
+    position: sticky;
+    height: 58px;
+    background-color: #3d3a3a8a;
+    display: flex;
+}
+
+nav .navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px;
+    flex-wrap: wrap;
+}
+
+.navigation li {
+    border-radius: 10px;
+    margin: 17px 4px;
+    list-style: none;
+    padding: 3px 1px;
+}
+
+.navigation li a {
+    padding: 21px 32px;
+    text-decoration: none;
+    color: white;
+}
+.navigation li:hover{
+    background-color: #80808099;
+}
+.navigation li a:hover{
+    text-decoration: underline;
+}
+
+/* Section Styling */
+
+#container {
+    line-height: 18px;
+    color: white;
+    display: flex;
+    /* border: 2px solid black; */
+    height: 318px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#container p {
+    text-shadow: 1px 1px 1px black;
+    font-size: 1rem;
+    padding: 16px 322px;
+    padding-left: 354px;
+    padding-top: 30px;
+}
+
+#container h1 {
+    padding-top: 32px;
+    font-size: 2.9rem;
+    margin-bottom: 5px;
+    text-shadow: 3px 2px 2px black;
+}
+.btn{
+    border: 1px solid beige;
+    padding: 3px 29px;
+    margin-top: 16px;
+    /* margin: 0px 1px; */
+    border-radius: 5px;
+    /* text-align: center; */
+    background-color: #ffb9b98a;
+    margin-right: 18px;
+}
+.btn:hover{
+    background-color: #ffffff94;
+}
+/* Delivery section styling */
+
+#delivery{
+    width: 100%;
+    height: 73vh;
+}
+
+#blocks{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#blocks h2{
+    padding-top: 32px;
+    font-size: 2.16rem;
+}
+#boxes{
+    display: flex;
+    flex-direction: row;
+}
+#blocks .box{
+    border-radius: 22px;
+    border: 2px solid black;
+    margin: 36px;
+    background-color: #fff3e48c;
+    height: 343px;
+}
+#blocks .box img{
+    padding-top: 2px;
+    height: 116px;
+    display: block;
+    margin:
+    auto;
+}
+#blocks .box p{
+    padding: 16px 27px;
+    font-size: 0.9rem;
+}
+#blocks #box3 h1{
+    /* padding: 1px 90px; */
+    padding-left: 147px;
+    padding-top: 12px;
+}
+#blocks #box1 img{
+    padding-top: 10px;
+}
+#blocks #box1 h1{
+    padding-left: 136px;
+}
+
+#blocks #box2 h1{
+    padding-left: 166px;
+}
+
+/* Clients Block Styling */
+
+#clients::before{
+    height: 39.2vh;
+    width: 100%;
+    content: " ";
+    background: url(clientsimg.jpg) no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+section .clients-box h1{
+    font-size: 2.57rem;
+    padding-left: 642px;
+    padding-top: 4px;
+    
+}
+.clients-box .logo img{
+    height: 117px;
+}
+.flex-s{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 244px;
+    align-items: center;
+}
+
+/* Contacts Us Block Styling */
+
+#contacts::before{
+    content: " ";
+    background: url(contactimg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 57vh;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contacts h1{
+    font-size: 2.64rem;
+    padding-left: 642px;
+    padding-top: 3px;
+}
+.contact-page{
+    padding: 29px 572px;
+    line-height: 32px;
+    height: 319px;
+    display: block;
+    /* border: 2px solid black; */
+    font-size: 1.1rem;
+}
+.contact-page input{
+    height: 24px;
+    width: 370px;
+}
+
+.contact-page .btn1{
+    padding: 5px 167px;
+    border: 1px solid beige;
+    background-color: #96969680;
+}
+.contact-page .btn1:hover{
+    background-color: #a49f9fed;
+}
+
+/* Footer Block Styling */
+#bottom {
+    height: 3vh;
+    width: 28vw;
+    padding: 9px 550px;
+    color: white;
+    background-color: black;
+}
+/* Media queryies */
+
+@media  only screen and (min-width:1590px) and (max-width:2560px) {
+    nav{
+        height: 93px;
+    }
+    #logo img{
+        width: 175px;
+        height: 89px;
+    }
+    .navigation li a{
+        font-size: 1.7rem;
+    }
+    nav .navigation{
+        padding: 13px 10px;
+    }
+    #container{
+        height: 563px;
+        line-height: 42px;
+    }
+    #container h1 {
+        font-size: 4.9rem;
+    }
+    #container p {
+        text-shadow: 1px 1px 1px black;
+        font-size: 1.69rem;
+        padding-left: 700px;
+    }
+    .btn{
+        padding: 10px 85px;
+        font-size: 1.4rem;
+        margin-bottom: 52px;
+    }
+    #blocks h2 {
+        padding-bottom: 56px;
+        font-size: 3.67rem;
+    }
+    #blocks .box{
+        margin: 47px;
+        height: 516px;
+    }
+    #blocks .box img{
+        height: 189px;
+    }
+    #blocks .box p{
+        font-size: 1.6rem;
+    }
+    #blocks #box1 h1{font-size: 2rem;padding-left: 259px;}
+    #blocks #box2 h1{font-size: 2.3rem;padding-left: 303px;}
+    #blocks #box3 h1{font-size: 2rem;padding-left: 281px;}
+    #contacts::before{
+        height: 63vh;
+        margin-top: 100px;
+    }
+    #clients::before{
+        height: 38.1vh;
+    }
+    section .clients-box h1 {
+        font-size: 3.57rem;
+        padding-left: 1127px;
+        padding-top: 4px;
+    }
+    .flex-s {
+        margin-top: 32px;
+    }
+    #bottom{
+        text-align: center;
+        /* height: 4vh; */
+        /* width: 57vw; */
+        /* padding: 3px 626px; */
+        width: 57vw;
+        font-size: 1.5rem;
+        margin-top: 191px;
+    }
+    .clients-box .logo img {
+        height: 119px;
+        margin-top: 29px;
+    }
+    #contacts h1{font-size: 3.8rem;margin-left: 480px;padding-top: 119px;}
+    .contact-page{
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-left: 514px;
+        margin-top: 80px;
+    }
+    .contact-page input{
+        height: 36px;
+        width: 495px;
+    }
+    .contact-page .btn1{
+        padding: 14px 229px;
+    }
+}
